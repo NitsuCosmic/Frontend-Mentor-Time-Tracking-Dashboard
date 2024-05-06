@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/output.css" />
+
+		<title>Frontend Mentor | Time tracking dashboard</title>
+	</head>
+	<body
+		class="font-rubik bg-[#0f1424] h-svh flex flex-col justify-center items-center"
+	>
+		<main class="p-6">
+			<section class="grid gap-6 md:grid-cols-4" id="grid-wrapper">
+				<section
+					class="flex flex-col bg-[#1c1f4a] rounded-xl overflow-hidden md:max-w-60 md:row-span-2"
+					id="first-child"
+				>
+					<div
+						class="h-[100%] p-8 bg-[#5847eb] flex gap-4 items-center rounded-xl md:flex-col md:items-start"
+					>
+						<img
+							src="./images/image-jeremy.png"
+							alt="Jeremy Photo"
+							class="max-w-16 border-white border-4 rounded-full"
+						/>
+						<div>
+							<span class="text-[#bdc1ff]">Report for</span>
+							<h1 class="text-white text-2xl md:text-4xl">Jeremy Robson</h1>
+						</div>
+					</div>
+					<ul class="flex justify-between px-8 py-4 md:flex-col">
+						<li>
+							<button
+								id="daily"
+								class="cursor-pointer text-[#6f76c8] hover:text-white transition-colors md:my-2"
+							>
+								Daily
+							</button>
+						</li>
+						<li>
+							<button
+								id="weekly"
+								class="cursor-pointer text-[#6f76c8] hover:text-white transition-colors md:my-2"
+							>
+								Weekly
+							</button>
+						</li>
+						<li>
+							<button
+								id="monthly"
+								class="cursor-pointer text-[#6f76c8] hover:text-white transition-colors md:my-2"
+							>
+								Monthly
+							</button>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</main>
+
+		<footer class="p-6 text-center text-white">
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					class="text-[#6f76c8]"
+					>Frontend Mentor</a
+				>. Coded by
+				<a
+					href="https://www.frontendmentor.io/profile/NitsuCosmic"
+					target="_blank"
+					class="text-[#6f76c8]"
+					>Nitsu</a
+				>.
+			</div>
+		</footer>
+		<script src="./js/index.js" type="module"></script>
+	</body>
+</html>
